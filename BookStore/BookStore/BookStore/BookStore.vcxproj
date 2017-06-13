@@ -78,10 +78,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\Project-master\Project-master\CIS22B_project\CIS22B_project\EditBook.cpp" />
+    <ClCompile Include="BookInformationMenu.cpp" />
     <ClCompile Include="Books.cpp" />
     <ClCompile Include="BookStore.cpp" />
+    <ClCompile Include="CashierMenu.cpp" />
+    <ClCompile Include="InventoryMenu.cpp" />
+    <ClCompile Include="MainMenu.cpp" />
+    <ClCompile Include="ReportsMenu.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BookInformationMenu.h" />
     <ClInclude Include="Books.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
