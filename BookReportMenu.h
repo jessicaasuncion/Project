@@ -9,6 +9,7 @@
 #include "Books.h"
 
 int displayReportMenu();// get user to pick which report listing to display
+
 //functions for all listings
 void inventoryListing(Books[], int); //sort by title
 void wholesaleListing( Books[], int); //sort by unit wholesale value
@@ -26,6 +27,21 @@ void displayCost(Books); // A list of all books in the inventory, sorted by whol
 void displayAge(Books); //A list of all books in the inventory, sorted by purchase date.
 
 enum REPORT {ALL=1, WHOLESALE, RETAIL, QUANTITY, COST, AGE, MAIN };
+
+template <class T1, class T2>
+double productOf(T1 num1, T2 num2){
+
+	return (num1*num2);
+}
+
+template <class T1>
+bool toSwap(T1 input1, T1 input2){
+	if (input1 > input2){
+		return true;
+	}
+	return false;
+}
+
 
 int displayReportMenu(){
 	string selectReport = "";
@@ -66,7 +82,7 @@ void inventoryListing( Books listing[], int size){
 		Books temp;
 		for (int j = 0; j < size - 1; j++)
 		{
-			if (newBookArray[j].getTitle()> newBookArray[j + 1].getTitle())
+			if (toSwap(newBookArray[j].getTitle(), newBookArray[j + 1].getTitle()))
 			{
 				temp = newBookArray[j];
 				newBookArray[j]=newBookArray[j + 1] ;
@@ -99,7 +115,7 @@ void wholesaleListing(Books listing[], int size){
 			//get the total wholesale value of each title by cost*quantity
 			double totalWholesale1 = newBookArray[j].getCost() * newBookArray[j].getQuantity();
 			double totalWholesale2 = newBookArray[j + 1].getCost() * newBookArray[j + 1].getQuantity();
-			if (totalWholesale1> totalWholesale1)
+			if (toSwap(totalWholesale1, totalWholesale1))
 			{
 				temp = newBookArray[j];
 				newBookArray[j]=newBookArray[j + 1];
@@ -110,7 +126,7 @@ void wholesaleListing(Books listing[], int size){
 	double totalWholesaleValue = 0.0;
 	for (int i = 0; i < size; i++){
 		displayWholesale(newBookArray[i]);
-		totalWholesaleValue += (newBookArray[i].getCost() * newBookArray[i].getQuantity());
+		totalWholesaleValue += productOf(newBookArray[i].getCost(),newBookArray[i].getQuantity());
 		
 	}
 	cout << setprecision(2) << fixed << "Total Wholesale value of the inventory is: $" << totalWholesaleValue << endl;
@@ -133,7 +149,7 @@ void retailListing(Books listing[], int size){
 		Books temp;
 		for (int j = 0; j < size - 1; j++)
 		{
-			if (newBookArray[j].getPrice()> newBookArray[j + 1].getPrice())
+			if (toSwap(newBookArray[j].getPrice(), newBookArray[j + 1].getPrice()))
 			{
 				temp = newBookArray[j];
 				newBookArray[j] = newBookArray[j + 1];
@@ -144,7 +160,7 @@ void retailListing(Books listing[], int size){
 	double totalRetailValue = 0.0;
 	for (int i = 0; i < size; i++){
 		displayRetail(newBookArray[i]);
-		totalRetailValue += (newBookArray[i].getPrice() * newBookArray[i].getQuantity());
+		totalRetailValue += productOf(newBookArray[i].getPrice() , newBookArray[i].getQuantity());
 	}
 	cout << setprecision(2) << fixed << "Total Wholesale value of the inventory is: $" << totalRetailValue << endl;
 	delete[] newBookArray;
@@ -164,7 +180,7 @@ void quantityListing(Books listing[], int size){
 		Books temp;
 		for (int j = 0; j < size - 1; j++)
 		{
-			if (newBookArray[j].getQuantity()< newBookArray[j + 1].getQuantity())
+			if (toSwap(newBookArray[j+1].getQuantity(), newBookArray[j ].getQuantity()))
 			{
 				temp = newBookArray[j];
 				newBookArray[j] = newBookArray[j + 1];
@@ -172,9 +188,10 @@ void quantityListing(Books listing[], int size){
 			}
 		}
 	}
-
+	int totalQuantity = 0;
 	for (int i = 0; i < size; i++){
 		displayQuantity(newBookArray[i]);
+		totalQuantity = (int)productOf(newBookArray[i].getQuantity, 1);
 	}
 	
 
@@ -195,7 +212,7 @@ void costListing(Books listing[], int size){
 		Books temp;
 		for (int j = 0; j < size - 1; j++)
 		{
-			if (newBookArray[j].getCost()< newBookArray[j + 1].getCost())
+			if (toSwap(newBookArray[j+1].getCost(), newBookArray[j ].getCost()))
 			{
 				temp = newBookArray[j];
 				newBookArray[j] = newBookArray[j + 1];
@@ -225,7 +242,7 @@ void ageListing(Books listing[], int size){
 		Books temp ;
 		for (int j = 0; j < size - 1; j++)
 		{
-			if (newBookArray[j].getDateAdded()< newBookArray[j + 1].getDateAdded())
+			if (toSwap(newBookArray[j+1].getDateAdded(), newBookArray[j].getDateAdded()))
 			{
 				temp = newBookArray[j];
 				newBookArray[j] = newBookArray[j + 1];
@@ -297,5 +314,7 @@ void displayAge(Books oneBook)
 
 	cout << setw(20) << left << oneBook.getDateAdded() << endl;
 }
+
+
 
 #endif
