@@ -78,6 +78,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Books.cpp" />
+    <ClCompile Include="..\..\Cashier.cpp" />
+    <ClCompile Include="..\..\main.cpp" />
     <ClCompile Include="BookInformationMenu.cpp" />
     <ClCompile Include="Books.cpp" />
     <ClCompile Include="BookSearch.cpp" />
@@ -85,6 +88,11 @@
     <ClCompile Include="BookStore.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\BookDelete.h" />
+    <ClInclude Include="..\..\BookEdit.h" />
+    <ClInclude Include="..\..\BookReportMenu.h" />
+    <ClInclude Include="..\..\Books.h" />
+    <ClInclude Include="..\..\Cashier.h" />
     <ClInclude Include="BookInformationMenu.h" />
     <ClInclude Include="Books.h" />
     <ClInclude Include="BookSearch.h" />
