@@ -84,6 +84,7 @@ void reportMenu(Books myBooks[], int size){
 		break;
 	case MAIN:
 		cout << "You will be redirected to Main Menu soon.";
+		system("pause");
 		break;
 	}
 
@@ -603,9 +604,12 @@ void saveOutput(int listingOption, Books listing[], int size){
 		}
 		cout << "The file has been saved as " << fileName << endl;
 		reportOutput.close();
+		cout << "You will be redirected back to Main Menu soon." << endl;
+		system("pause");
 	}
 	else if (confirm == 'n' || confirm == 'N'){
 		cout << "You will be redirected back to Main Menu soon." << endl;
+		system("pause");
 		
 	}
 }
