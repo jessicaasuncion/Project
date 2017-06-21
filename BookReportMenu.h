@@ -1,3 +1,14 @@
+/*
+how to use:
+reportMenu(Books[] , int);
+argument Books[] : pass in the original book array
+argumment int: pass in the number of the book in the array. DO NOT pass in max size if the array is not full.
+
+pending: displayMainMenu()
+i will need to include this if user choose to return to main menu
+
+*/
+
 #define _CRT_SECURE_NO_WARNINGS
 
 #ifndef BOOK_REPORT_MENU_H
@@ -8,6 +19,7 @@
 
 #include "Books.h"
 
+void reportMenu(Books[], int);
 int displayReportMenu();// get user to pick which report listing to display
 
 //functions for all listings
@@ -42,9 +54,40 @@ bool toSwap(T1 input1, T1 input2){
 	return false;
 }
 
+void reportMenu(Books myBooks[], int size){
+	int reportType = displayReportMenu();
+
+
+	switch (reportType)  {
+	case ALL:
+
+		inventoryListing(myBooks, size);
+		break;
+	case WHOLESALE:
+		wholesaleListing(myBooks, size);
+		break;
+	case RETAIL:
+		retailListing(myBooks, size);
+		break;
+	case QUANTITY:
+		quantityListing(myBooks, size);
+		break;
+	case COST:
+		costListing(myBooks, size);
+		break;
+	case AGE:
+		ageListing(myBooks, size);
+		break;
+	case MAIN:
+		//display Main Menu();
+		break;
+
+
+	}
+}
 
 int displayReportMenu(){
-	string selectReport = "";
+	int selectReport = 0;
 	cout << "REPORTS BLA BLA SHOP NAME BLA BLA: " << endl;
 	cout << "1. Inventory Listing " << endl
 		<< "2. Inventory Wholesale Value" << endl
@@ -56,14 +99,14 @@ int displayReportMenu(){
 		<< "Enter Your Choice: ";
 	cin >> selectReport;
 
-	while (!(stoi(selectReport) >= ALL && stoi(selectReport) <= MAIN)){
-		cout << "Your input is invalid. Please select between 1-9: ";
+	while (selectReport <= ALL && selectReport >= MAIN){
+		cout << "Your input is invalid. Please select between 1-7: ";
 		cin >>selectReport;
 	}
 
-	return stoi(selectReport) - 48; //make ascii value of 1-9 (48-57) into 1-9
+	return selectReport;
 
-}// also get user to pick which report listing to display
+}
 
 
 //Sort listing
@@ -191,7 +234,7 @@ void quantityListing(Books listing[], int size){
 	int totalQuantity = 0;
 	for (int i = 0; i < size; i++){
 		displayQuantity(newBookArray[i]);
-		totalQuantity = (int)productOf(newBookArray[i].getQuantity, 1);
+		totalQuantity = (int)productOf(newBookArray[i].getQuantity(), 1);
 	}
 	
 
