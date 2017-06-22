@@ -1,0 +1,26 @@
+1283847386|Tuesday's with Morrie|Mitch Albom|Doubleday|19970103|5|3.330000|9.990000
+7593659753|The Great Gatsby|F. Scott Fitzgerald|Singleday|19220320|0|3.250000|5.990000
+4839443732|666|John Smith|Star|20040204|2|4.450000|10.990000
+9405838218|All About Love|Bell Hooks|Penquin|20000803|8|2.990000|5.440000
+6336293649|Desert Solitaire|Edward Abbey|Cougar|19681003|3|1.780000|4.990000
+1934932385|Disgrace|J.M. Coetzee|B.A.M|19990701|1|2.340000|7.990000
+7465394629|Geek Love|Katherine Dunn|Lizzy|19890503|2|4.870000|11.990000
+3826394702|Gilead|Marilynne Robinson|Tiffany|20041104|5|3.780000|9.990000
+7438462384|Giovanni's Room|James Baldwin|Fire|19560407|10|2.780000|6.990000
+9003735228|A Good Man is Hard to Find|Flannery O'Connor|Cupertin|19551008|2|3.560000|8.990000
+3648465857|The Handmaid's Tale|Margaret Atwood|Watering|19880907|12|4.320000|10.990000
+2836394792|The Hitchhiker's Guide|Douglas Adams|Galaxies|19780101|99|1.760000|4.990000
+7352864938|A Winter's Night|Italo Calvino|Winter P.|19790416|3|2.430000|7.990000
+3482627482|Infinite Jest|David Foster Wallace|Infinity|19991112|6|3.560000|8.990000
+2464589589|The Left Hand of Darkness|Ursula K. Le Guin|Light|19690708|7|1.670000|9.990000
+0908325283|Lolita|Vladmir Nabokov|Small|19550115|2|3.450000|7.990000
+4243836283|Man's Search For Meaning|Viktor E. Frankl|Meanful|19910308|8|3.880000|8.990000
+3646294563|Maus|Art Spiegelman|Animal Pub.|19861123|10|4.670000|9.990000
+6312837465|Never Let Me Go|Kazuo Ishiguro|Foreignity|20130309|1|1.770000|4.990000
+7564538263|A People's History|Howard Zinn|Home|19990413|2|5.780000|6.990000
+2111273648|The Phantom Tollbooth|Norton Juster|Dentisim|19280513|3|3.870000|8.990000
+1118634950|Slaughterhouse-Five|Kurt Vonnegut|Soviet|18980613|5|1.340000|8.990000
+7732947457|Things Fall Apart|Chinua Achebe|Chewbace|19020708|3|1.230000|8.990000
+3323477543|To Kill A Mockingbird|Harper Lee|Doubleday|19320121|2|3.890000|9.990000
+2238236384|Where the Wild Things Are|Maurice Sendak|Childran|19561231|4|3.780000|7.990000
+6637371375|The Wind-Up Bird Chronicle|Haruki Murakami|Ages|19000823|2|1.450000|4.990000
