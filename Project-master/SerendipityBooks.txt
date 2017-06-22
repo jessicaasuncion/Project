@@ -1,0 +1,52 @@
+1283847386|Tuesday's with Morrie|Mitch Albom|Doubleday|19970103|5|3.33|9.99
+7593659753|The Great Gatsby|F. Scott Fitzgerald|Singleday|19220320|20|3.25|5.99
+4839443732|666|Roberto Bolano|Star|20040204|6|4.45|10.99
+9405838218|All About Love|Bell Hooks|Penquin|20000803|8|2.99|5.44
+6336293649|Desert Solitaire|Edward Abbey|Cougar|19681003|3|1.78|4.99
+1934932385|Disgrace|J.M. Coetzee|B.A.M|19990701|1|2.34|7.99
+7465394629|Geek Love|Katherine Dunn|Lizzy|19890503|2|4.87|11.99|
+3826394702|Gilead|Marilynne Robinson|Tiffany|20041104|5|3.78|9.99
+7438462384|Giovanni's Room|James Baldwin|Fire|19560407|10|2.78|6.99
+9003735228|A Good Man is Hard to Find|Flannery O'Connor|Cupertin|1955008|3|3.56|8.99
+3648465857|The Handmaid's Tale|Margaret Atwood|Watering|19880907|12|4.32|10.99
+2836394792|The Hitchhiker's Guide to the Galaxy|Douglas Adams|Galaxies|19780101|99|1.76|4.99
+7352864938|If On A Winter's Night A Traveler|Italo Calvino|Winter P.|19790416|3|2.43|7.99
+3482627482|Infinite Jest|David Foster Wallace|Infinity|19991112|6|3.56|8.99
+2464589589|The Left Hand of Darkness|Ursula K. Le Guin|Light|19690708|7|1.67|9.99
+0908325283|Lolita|Vladmir Nabokov|Small|19550115|2|3.45|7.99
+4243836283|Man's Search For Meaning|Viktor E. Frankl|Meanful|19910308|8|3.88|8.99
+3646294563|Maus|Art Spiegelman|Animal Pub.|19861123|10|4.67|9.99
+6312837465|Never Let Me Go|Kazuo Ishiguro|Foreignity|20130309|1|1.77|4.99
+7564538263|A People's History of the United States|Howard Zinn|Home|19990413|2|5.78|6.99
+2111273648|The Phantom Tollbooth|Norton Juster|Dentisim|19280513|3|3.87|8.99
+1118634950|Slaughterhouse-Five|Kurt Vonnegut|Soviet|18980613|5|1.34|8.99
+7732947457|Things Fall Apart|Chinua Achebe|Chewbace|19020708|3|1.23|8.99
+3323477543|To Kill A Mockingbird|Harper Lee|Doubleday|19320121|2|3.89|9.99
+2238236384|Where the Wild Things Are|Maurice Sendak|Childran|19561231|4|3.78|7.99
+6637371375|The Wind-Up Bird Chronicle|Haruki Murakami|Ages|19000823|2|1.45|4.99
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
